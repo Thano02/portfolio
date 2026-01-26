@@ -647,12 +647,6 @@
                     <div class="socials">
                       <ul>
                         <li>
-                          <a class="link" href="https://www.facebook.com/ethan.elharrar.73/"><span class="ico-circle"><i class="fab fa-facebook"></i></span></a>
-                        </li>
-                        <li>
-                          <a class="link" href="https://www.instagram.com/ethanelharrar/"><span class="ico-circle"><i class="fab fa-instagram"></i></span></a>
-                        </li>
-                        <li>
                           <a class="link" href="https://www.linkedin.com/in/ethan-el-harrar/"><span class="ico-circle"><i class="fab fa-linkedin"></i></span></a>
                         </li>
                       </ul>
