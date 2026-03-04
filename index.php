@@ -82,7 +82,7 @@
         <div class="row g-5 align-items-start">
           <div class="col-md-4 reveal">
             <div class="about-photo">
-              <img src="assets/img/matete.jpg" alt="Ethan El Harrar">
+              <img src="assets/img/matete.jpeg" alt="Ethan El Harrar">
             </div>
             <div class="about-info">
               <div class="info-item">
