@@ -52,12 +52,12 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="container">
-        <p class="hero-eyebrow reveal">Paris, France</p>
-        <h1 class="hero-title reveal">Ethan El Harrar</h1>
-        <p class="hero-subtitle reveal">
+        <p class="hero-eyebrow hero-anim">Paris, France</p>
+        <h1 class="hero-title hero-anim">Ethan El Harrar</h1>
+        <p class="hero-subtitle hero-anim">
           <span class="typed" data-typed-items="Data Analyst, Data Scientist, Power BI Consultant"></span>
         </p>
-        <div class="hero-cta reveal">
+        <div class="hero-cta hero-anim">
           <a href="#work" class="btn-primary scrollto">
             <i class="bi bi-grid-3x3-gap"></i> View Projects
           </a>
