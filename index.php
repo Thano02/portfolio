@@ -82,7 +82,7 @@
         <div class="row g-5 align-items-start">
           <div class="col-md-4 reveal">
             <div class="about-photo">
-              <img src="assets/img/matete2.jpg" alt="Ethan El Harrar">
+              <img src="assets/img/matete.jpg" alt="Ethan El Harrar">
             </div>
             <div class="about-info">
               <div class="info-item">
@@ -99,7 +99,7 @@
               </div>
               <div class="info-item">
                 <span class="info-label">Profile</span>
-                <span class="info-value">Data Analyst · Data Scientist · Power BI</span>
+                <span class="info-value">Data Analyst · Data Scientist · DataViz</span>
               </div>
             </div>
           </div>
@@ -128,27 +128,32 @@
               <h4 class="skills-title">Technical Skills</h4>
               <div class="skill-item">
                 <div class="skill-info"><span>Python</span><span>70%</span></div>
-                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="70"></div>
+                </div>
               </div>
               <div class="skill-item">
                 <div class="skill-info"><span>SQL</span><span>80%</span></div>
-                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
               </div>
               <div class="skill-item">
                 <div class="skill-info"><span>DAX</span><span>80%</span></div>
-                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="80"></div>
+                </div>
               </div>
-              <div class="skill-item">
-                <div class="skill-info"><span>Java</span><span>60%</span></div>
-                <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info"><span>Power BI</span><span>90%</span></div>
-                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Power BI | Tableau | Looker</span><span>90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <!-- End About -->
