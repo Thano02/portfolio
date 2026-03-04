@@ -144,11 +144,11 @@
                   <div class="skill-fill" data-width="80"></div>
                 </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>Power BI | Tableau | Looker</span><span>90%</span></div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="90"></div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Power BI | Tableau | Looker</span><span>90%</span></div>
+                <div class="skill-bar">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
               </div>
             </div>
           </div>
