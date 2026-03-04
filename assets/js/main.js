@@ -1,229 +1,116 @@
-/**
-* Template Name: DevFolio - v4.7.1
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+(function () {
+  'use strict';
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
-  }
+  const select = (el, all = false) =>
+    all ? [...document.querySelectorAll(el)] : document.querySelector(el);
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
+  const header = select('#header');
+  const navbar = select('#navbar');
+  const navToggle = select('.mobile-nav-toggle');
 
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
+  /* ── Header background on scroll ── */
+  const updateHeader = () =>
+    header?.classList.toggle('header-scrolled', window.scrollY > 80);
 
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
+  /* ── Back to top visibility ── */
+  const backToTop = select('.back-to-top');
+  const updateBackToTop = () =>
+    backToTop?.classList.toggle('active', window.scrollY > 200);
 
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
+  /* ── Active nav link on scroll ── */
+  const navLinks = select('#navbar .scrollto', true);
+  const updateActiveNav = () => {
+    const pos = window.scrollY + 130;
+    navLinks.forEach(link => {
+      const section = link.hash && select(link.hash);
+      if (!section) return;
+      link.classList.toggle('active',
+        pos >= section.offsetTop && pos < section.offsetTop + section.offsetHeight
+      );
+    });
+  };
 
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
-    }
-
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
-
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
-
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
   window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
+    updateHeader();
+    updateBackToTop();
+    updateActiveNav();
+    select('#preloader')?.remove();
+    if (window.location.hash && select(window.location.hash)) scrollTo(window.location.hash);
   });
 
-  /**
-   * Intro type effect
-   */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
+  window.addEventListener('scroll', () => {
+    updateHeader();
+    updateBackToTop();
+    updateActiveNav();
+  }, { passive: true });
+
+  /* ── Smooth scroll ── */
+  const scrollTo = (hash) => {
+    const target = select(hash);
+    if (!target) return;
+    window.scrollTo({ top: target.offsetTop - (header?.offsetHeight ?? 70) - 10, behavior: 'smooth' });
+  };
+
+  document.addEventListener('click', e => {
+    const link = e.target.closest('.scrollto');
+    if (!link?.hash || !select(link.hash)) return;
+    e.preventDefault();
+    closeNav();
+    scrollTo(link.hash);
+  });
+
+  /* ── Mobile nav ── */
+  const closeNav = () => {
+    navbar?.classList.remove('navbar-mobile');
+    const icon = navToggle?.querySelector('i');
+    if (icon) icon.className = 'bi bi-list';
+  };
+
+  navToggle?.addEventListener('click', () => {
+    const isOpen = navbar?.classList.toggle('navbar-mobile');
+    const icon = navToggle.querySelector('i');
+    if (icon) icon.className = isOpen ? 'bi bi-x-lg' : 'bi bi-list';
+  });
+
+  /* ── Typed.js ── */
+  const typedEl = select('.typed');
+  if (typedEl && typeof Typed !== 'undefined') {
     new Typed('.typed', {
-      strings: typed_strings,
+      strings: typedEl.dataset.typedItems.split(',').map(s => s.trim()),
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      typeSpeed: 80,
+      backSpeed: 40,
+      backDelay: 2200,
     });
   }
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+  /* ── Reveal animations ── */
+  const revealObserver = new IntersectionObserver(
+    entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')),
+    { threshold: 0.08, rootMargin: '0px 0px -55px 0px' }
+  );
+  select('.reveal', true).forEach(el => revealObserver.observe(el));
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  /* ── Skill bar animation ── */
+  const skillsSection = select('.skills');
+  if (skillsSection) {
+    new IntersectionObserver(([entry], obs) => {
+      if (!entry.isIntersecting) return;
+      skillsSection.querySelectorAll('.skill-fill').forEach(bar => {
+        bar.style.width = (bar.dataset.width ?? 0) + '%';
+      });
+      obs.disconnect();
+    }, { threshold: 0.35 }).observe(skillsSection);
+  }
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
+  /* ── Portfolio details slider (detail pages only) ── */
+  if (typeof Swiper !== 'undefined' && select('.portfolio-details-slider')) {
+    new Swiper('.portfolio-details-slider', {
+      speed: 400,
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', type: 'bullets', clickable: true },
     });
   }
 
-})()
+})();

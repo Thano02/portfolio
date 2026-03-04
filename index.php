@@ -2,681 +2,380 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethan El Harrar — Data Scientist & Analyst</title>
+  <meta name="description" content="Portfolio of Ethan El Harrar, Data Scientist, Data Analyst and Power BI Consultant based in Paris.">
 
-  <title>My Portfolio</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
+  <link rel="icon" href="assets/img/info.png">
+  <link rel="apple-touch-icon" href="assets/img/info.png">
 
-  <!-- Favicons -->
-  <link href="assets/img/info.png" rel="icon" />
-  <link href="assets/img/info.png" rel="apple-touch-icon" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="style.css" rel="stylesheet" />
-
-  <!-- =======================================================
-  * Template Name: DevFolio - v4.7.1
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Main CSS -->
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.php">Portfolio</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.php" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+      <a href="index.php" class="logo">EEH</a>
+      <nav id="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#work">Project</a></li>
-          <li>
-            <a class="nav-link scrollto" href="#pearltrees">Pearltrees</a>
-          </li>
-          <!--<li class="dropdown">
-              <a href="#"
-                ><span>Others</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#">dropdown</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Drop Down</span>
-                    <i class="bi bi-chevron-right"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li>-->
-          <li><a class="nav-link scrollto" href="#veille">IT Watch</a></li>
+          <li><a class="nav-link scrollto" href="#work">Projects</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li>
-            <a class="nav-link scrollto" href="assets/EthanCV.pdf">CV</a>
-          </li>
+          <li><a class="nav-link btn-cv" href="assets/EthanCV.pdf" target="_blank" rel="noopener">CV</a></li>
         </ul>
-        <i class="fa fa-solid fa-bars mobile-nav-toggle"></i>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
       </nav>
-      <!-- .navbar -->
     </div>
   </header>
   <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/fond.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Ethan El Harrar</h1>
-          <p class="hero-subtitle">
-            <span class="typed" data-typed-items="Data-analyst, Data-Scientist, Consultant/Trainer Power BI"></span>
-          </p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+  <!-- ======= Hero ======= -->
+  <section id="hero" class="hero" style="background-image: url(assets/img/fond.jpg)">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="container">
+        <p class="hero-eyebrow reveal">Paris, France</p>
+        <h1 class="hero-title reveal">Ethan El Harrar</h1>
+        <p class="hero-subtitle reveal">
+          <span class="typed" data-typed-items="Data Analyst, Data Scientist, Power BI Consultant"></span>
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#work" class="btn-primary scrollto">
+            <i class="bi bi-grid-3x3-gap"></i> View Projects
+          </a>
+          <a href="assets/EthanCV.pdf" class="btn-outline" target="_blank" rel="noopener">
+            <i class="bi bi-download"></i> Download CV
+          </a>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End Hero Section -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/matete2.jpg" class="img-fluid rounded b-shadow-a" alt="" />
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p>
-                          <span class="title-s">Name: </span>
-                          <span>Ethan El Harrar</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Profil: </span>
-                          <span>Data Analyst, Data Scientist, Consultant/Trainer Power BI</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Email: </span>
-                          <span>Ethan36@hotmail.fr</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Phone: </span>
-                          <span>+33 6 26 14 58 57</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skills</p>
-                    <span>PYTHON</span>
-                    <span class="pull-right">70%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>SQL</span>
-                    <span class="pull-right">80%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>DAX</span>
-                    <span class="pull-right">80%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JAVA</span>
-                    <span class="pull-right">60%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Power Bi</span>
-                    <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">About me</h5>
-                    </div>
-                    <p class="lead">
-                      I grew up being curious and passionate. Whenever something wasn't working,
-                      I would spend hours trying to fix it.
-                    </p>
-                    <p class="lead">
-                      After earning my scientific baccalaureate, a BTS in Information Systems Services,
-                      and a Bachelor's in Big Data and Artificial Intelligence, I recently completed a
-                      *Master’s in Data Science at the Higher School of Computer Engineering (ESGI).
-                      My studies were completed through apprenticeships, combining theoretical knowledge
-                      with practical experience. In my role at Bic, where I work exclusively in English,
-                      I have refined and applied my language skills in a professional setting.
-                    </p>
-                    <p class="lead">
-                      My professional experiences have endowed me with crucial skills, particularly
-                      effective communication within diverse teams. I am comfortable under pressure,
-                      demonstrating efficiency in dynamic environments. My natural curiosity enhances
-                      my adaptability and inclination to explore new solutions. Methodical rigor characterizes
-                      my approach, while my consistently positive demeanor contributes to a collaborative
-                      and positive environment, fostering teamwork and collective success.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
+    <!-- ======= About ======= -->
+    <section id="about" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">Services</h3>
-              <div class="line-mf"></div>
-            </div>
-          </div>
+        <div class="section-header reveal">
+          <span class="section-tag">About me</span>
+          <h2 class="section-title">Who I Am</h2>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="fa fa-solid fa-database"></i></span>
+        <div class="row g-5 align-items-start">
+          <div class="col-md-4 reveal">
+            <div class="about-photo">
+              <img src="assets/img/matete2.jpg" alt="Ethan El Harrar">
+            </div>
+            <div class="about-info">
+              <div class="info-item">
+                <span class="info-label">Email</span>
+                <span class="info-value">Ethan36@hotmail.fr</span>
               </div>
-              <div class="service-content">
-                <h2 class="s-title">Data Scientist</h2>
-                <p class="s-description text-center">
-                  In data science, I continually progress by working on personal projects in addition to
-                  my professional tasks. These projects allow me to deepen my skills and gain confidence in
-                  applying theoretical concepts. My commitment to continuous improvement reflects my
-                  determination to remain effective and adaptable in a constantly evolving field.
-                </p>
-                <br>
+              <div class="info-item">
+                <span class="info-label">Phone</span>
+                <span class="info-value">+33 6 26 14 58 57</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Paris, France</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Profile</span>
+                <span class="info-value">Data Analyst · Data Scientist · Power BI</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="fa fa-light fa-chart-line"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Data Analyst</h2>
-                <p class="s-description text-center">
-                  As a data analyst, I have expanded my expertise by developing advanced DAX solutions on
-                  SSAS cubes, delivering Power BI training, and enhancing my business analyst skills
-                  through diverse data projects. I combine strong technical abilities in data modeling and
-                  visualization with the capacity to turn business needs into impactful, actionable insights.
-                </p>
-                <br>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="fa fa-solid fa-code"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Power Bi Consultant</h2>
-                <p class="s-description text-center">
-                  As a junior Power BI consultant, I help teams make better use of the tool by providing
-                  on-site training and support tailored to their needs. I have contributed to various projects,
-                  particularly improving existing dashboards, always aiming to make data clearer and more
-                  useful. My goal is to share my knowledge while applying what I learn, enabling teams
-                  to gain autonomy and achieve concrete results.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-    <!-- End Services Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">Project</h3>
-              <p class="subtitle-a">Here are the projects I have completed</p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="fraud.html">
-                <div class="work-img">
-                  <img src="assets/img/fraudbg.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Fraud Bank Analysis</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Data Analysis</span>
-                      <span class="w-date">15 Dec. 2022</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="fraud.html">
-                        <span class="fa fa-regular fa-plus"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="heart.html">
-                <div class="work-img">
-                  <img src="assets/img/heartbg.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Heart Disease</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Machin Learning</span>
-                      <span class="w-date">6 Dec. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="heart.html">
-                        <span class="fa fa-regular fa-plus"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="energy.html">
-                <div class="work-img">
-                  <img src="assets/img/energybg.png" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Energy Perf. Diagnosis</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Machin Learning</span>
-                      <span class="w-date">8 Dec. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="energy.html">
-                        <span class="fa fa-regular fa-plus"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="churn.html">
-                <div class="work-img">
-                  <img src="assets/img/churn_bg.png" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Azure Churn Prediction</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Azure Cloud & ML</span>
-                      <span class="w-date">14 Feb. 2025</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="churn.html">
-                        <span class="fa fa-regular fa-plus"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="camp.html">
-                <div class="work-img">
-                  <img src="assets/img/camp_bg.png" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">AI Camp Assistant</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">NLP Machin Learning</span>
-                      <span class="w-date">11 Aug. 2025</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="camp.html">
-                        <span class="fa fa-regular fa-plus"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="trash.html">
-                <div class="work-img">
-                  <img src="assets/img/garbage_bg.png" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Live Trash Classification</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Computer Vision</span>
-                      <span class="w-date">23 Jul. 2025</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="trash.html">
-                        <span class="fa fa-regular fa-plus"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Portfolio Section -->
-
-    <!-- ======= PEARLTREES Section ======= -->
-    <div id="pearltrees" class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <span class="author">Pearltrees</span>
-                    </div>
-                    <div class="content-test">
-                      <iframe src="https://www.pearltrees.com/titane100?embed=2&d=202203091340" width="100%" height="850px" style="border: 0px" allowtransparency="true"></iframe><span style="
-                            display: block;
-                            padding-top: 2px;
-                            color: #818181;
-                            font-size: 13px;
-                          "><a href="https://www.pearltrees.com/titane100" style="color: #818181; font-size: 13px" target="_blank">Titane100</a></span>
-                    </div>
-                  </div>
-                </div>
-                <!-- End testimonial item -->
-              </div>
-            </div>
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Testimonials Section -->
-
-    <!-- ======= Veille Section ======= -->
-    <section id="veille" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">IT WATCH</h3>
-              <p class="subtitle-a">
-                Discover my technology watches here!
+          <div class="col-md-8">
+            <div class="reveal">
+              <p class="about-text">
+                I grew up being curious and passionate. Whenever something wasn't working,
+                I would spend hours trying to fix it.
               </p>
-              <div class="line-mf"></div>
+              <p class="about-text">
+                After earning my scientific baccalaureate, a BTS in Information Systems Services,
+                and a Bachelor's in Big Data and Artificial Intelligence, I completed a Master's in
+                Data Science at the Higher School of Computer Engineering (ESGI). My studies were
+                completed through apprenticeships, combining theoretical knowledge with real-world
+                experience. In my role at Bic, working exclusively in English, I refined and applied
+                my language skills in a professional setting.
+              </p>
+              <p class="about-text">
+                My professional experiences have given me crucial skills, particularly effective
+                communication within diverse teams. I am comfortable under pressure, demonstrating
+                efficiency in dynamic environments. My curiosity enhances my adaptability and
+                inclination to explore new solutions, while methodical rigor characterizes my approach.
+              </p>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="privacy.html"><img src="assets/img/privacyia1.png" alt="" class="img-fluid" /></a>
+            <div class="skills reveal">
+              <h4 class="skills-title">Technical Skills</h4>
+              <div class="skill-item">
+                <div class="skill-info"><span>Python</span><span>70%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
               </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Privacy</h6>
-                  </div>
-                </div>
-                <h3 class="card-title">
-                  <a href="privacy.html">Privacy-Preserving Data Analytics</a>
-                </h3>
-                <p class="card-description">
-                  Discover "Privacy-Preserving Data Analytics" (PPDA): the clever alliance between
-                  data analysis and confidentiality. Explore techniques like homomorphic encryption, ensuring
-                  data protection while revealing crucial information. Essential for data enthusiasts
-                  who prioritize privacy.
-                </p><br><br><br>
+              <div class="skill-item">
+                <div class="skill-info"><span>SQL</span><span>80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="dataviz.html"><img src="assets/img/dataviz1.png" alt="" class="img-fluid" /></a>
+              <div class="skill-item">
+                <div class="skill-info"><span>DAX</span><span>80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
               </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Dataviz</h6>
-                  </div>
-                </div>
-                <h3 class="card-title">
-                  <a href="dataviz.html">Data Visualization et Storytelling</a>
-                </h3>
-                <p class="card-description">
-                  Explore the captivating fusion of Data Visualization and Storytelling in this development.
-                  Discover how clever techniques make complex data accessible, highlighting the art of graphic selection, organized hierarchy,
-                  and visual narrative. A journey to the intersection of creativity and data analysis for impactful communication.
-                </p><br><br>
+              <div class="skill-item">
+                <div class="skill-info"><span>Java</span><span>60%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="customer.html"><img src="assets/img/customer_bg.png" alt="" class="img-fluid" /></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Analytics</h6>
-                  </div>
-                </div>
-                <h3 class="card-title">
-                  <a href="customer.html">Customer Segmentation & Churn Prediction</a>
-                </h3>
-                <p class="card-description">
-                  Unlock the power of customer retention with churn prediction. Discover how data-driven
-                  insights reveal at-risk customers, guide targeted actions, and strengthen loyalty.
-                  Explore how segmentation and predictive analytics can boost satisfaction, secure revenue,
-                  and give your business a competitive edge in a rapidly evolving market.
-                </p>
+              <div class="skill-item">
+                <div class="skill-info"><span>Power BI</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Veille Section -->
+    <!-- End About -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
+    <!-- ======= Services ======= -->
+    <section id="services" class="section-alt">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">Send me a message!</h5>
-                    </div>
-                    <div>
-                      <form action="mail.php" method="POST" target="_blank">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" placeholder="Name *" required />
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" placeholder="Email *" required />
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" placeholder="Subject *" required />
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading"></div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">
-                              Send the message
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">Contact me</h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        For any specific inquiries, please contact me using the provided
-                        contact information below or fill out the attached form.
-                      </p>
-                      <ul class="list-ico">
-                        <li>
-                          <span class="	fas fa-map-marker-alt"></span> Paris, France
-                        </li>
-                        <li>
-                          <span class="fas fa-mobile-alt"></span> (+33) 626145857
-                        </li>
-                        <li>
-                          <span class="fas fa-envelope"></span>
-                          ethan36@hotmail.fr
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li>
-                          <a class="link" href="https://www.linkedin.com/in/ethan-el-harrar/"><span class="ico-circle"><i class="fab fa-linkedin"></i></span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+        <div class="section-header reveal">
+          <span class="section-tag">What I do</span>
+          <h2 class="section-title">Services</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-graph-up-arrow"></i>
               </div>
+              <h3 class="service-title">Data Scientist</h3>
+              <p class="service-desc">
+                I continuously progress in data science through both professional projects and personal
+                initiatives. This commitment allows me to deepen my skills and confidently apply
+                theoretical concepts in a constantly evolving field.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <h3 class="service-title">Data Analyst</h3>
+              <p class="service-desc">
+                I have developed advanced DAX solutions on SSAS cubes, delivered Power BI training,
+                and built strong business analysis skills. I combine technical depth with the ability
+                to turn complex data into clear, actionable insights.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <h3 class="service-title">Power BI Consultant</h3>
+              <p class="service-desc">
+                I help teams make better use of Power BI through on-site training and tailored support.
+                I have contributed to various projects — improving existing dashboards and enabling
+                teams to gain autonomy and achieve concrete, measurable results.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Contact Section -->
-  </main>
-  <!-- End #main -->
+    <!-- End Services -->
 
+    <!-- ======= Projects ======= -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">A selection of projects I have built and delivered</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal">
+            <a href="fraud.html" class="project-card">
+              <div class="project-img">
+                <img src="assets/img/fraudbg.jpg" alt="Fraud Bank Analysis">
+                <div class="project-overlay">
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Data Analysis</span>
+                <h3 class="project-title">Fraud Bank Analysis</h3>
+                <span class="project-date">Dec 2022</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 reveal">
+            <a href="heart.html" class="project-card">
+              <div class="project-img">
+                <img src="assets/img/heartbg.jpg" alt="Heart Disease Prediction">
+                <div class="project-overlay">
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Machine Learning</span>
+                <h3 class="project-title">Heart Disease Prediction</h3>
+                <span class="project-date">Dec 2023</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 reveal">
+            <a href="energy.html" class="project-card">
+              <div class="project-img">
+                <img src="assets/img/energybg.png" alt="Energy Performance Diagnosis">
+                <div class="project-overlay">
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Machine Learning</span>
+                <h3 class="project-title">Energy Perf. Diagnosis</h3>
+                <span class="project-date">Dec 2023</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 reveal">
+            <a href="churn.html" class="project-card">
+              <div class="project-img">
+                <img src="assets/img/churn_bg.png" alt="Azure Churn Prediction">
+                <div class="project-overlay">
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Azure Cloud &amp; ML</span>
+                <h3 class="project-title">Azure Churn Prediction</h3>
+                <span class="project-date">Feb 2025</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 reveal">
+            <a href="camp.html" class="project-card">
+              <div class="project-img">
+                <img src="assets/img/camp_bg.png" alt="AI Camp Assistant">
+                <div class="project-overlay">
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">NLP · Machine Learning</span>
+                <h3 class="project-title">AI Camp Assistant</h3>
+                <span class="project-date">Aug 2025</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 reveal">
+            <a href="trash.html" class="project-card">
+              <div class="project-img">
+                <img src="assets/img/garbage_bg.png" alt="Live Trash Classification">
+                <div class="project-overlay">
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Computer Vision</span>
+                <h3 class="project-title">Live Trash Classification</h3>
+                <span class="project-date">Jul 2025</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects -->
+
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="section-contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag light">Get in touch</span>
+          <h2 class="section-title light">Contact</h2>
+        </div>
+        <div class="row g-5 align-items-start">
+          <div class="col-md-5 reveal">
+            <p class="contact-intro">
+              For any specific inquiries, please contact me using the information below
+              or fill out the form and I will get back to you shortly.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <i class="bi bi-geo-alt"></i>
+                <span>Paris, France</span>
+              </li>
+              <li>
+                <i class="bi bi-telephone"></i>
+                <span>+33 6 26 14 58 57</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope"></i>
+                <span>ethan36@hotmail.fr</span>
+              </li>
+            </ul>
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/ethan-el-harrar/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-7 reveal">
+            <form action="mail.php" method="POST" target="_blank" class="contact-form">
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+              </div>
+              <input type="text" name="subject" placeholder="Subject" required>
+              <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+              <button type="submit" class="btn-submit">
+                Send Message <i class="bi bi-send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+  </main>
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-solid fa-arrow-up"></i></a>
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
