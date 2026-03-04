@@ -62,12 +62,14 @@
   /* ── Mobile nav ── */
   const closeNav = () => {
     navbar?.classList.remove('navbar-mobile');
+    document.body.classList.remove('nav-open');
     const icon = navToggle?.querySelector('i');
     if (icon) icon.className = 'bi bi-list';
   };
 
   navToggle?.addEventListener('click', () => {
     const isOpen = navbar?.classList.toggle('navbar-mobile');
+    document.body.classList.toggle('nav-open', isOpen);
     const icon = navToggle.querySelector('i');
     if (icon) icon.className = isOpen ? 'bi bi-x-lg' : 'bi bi-list';
   });

@@ -30,7 +30,7 @@
   <header id="header">
     <div class="container">
       <a href="index.php" class="logo">EEH</a>
-      <nav id="navbar" class="navbar">
+      <nav id="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
