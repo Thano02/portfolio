@@ -229,7 +229,7 @@
               </div>
               <div class="project-body">
                 <span class="project-tag">Data Analysis</span>
-                <h3 class="project-title">Freight in N</h3>
+                <h3 class="project-title">Freight in</h3>
                 <span class="project-date">Dec 2022</span>
               </div>
             </a>
