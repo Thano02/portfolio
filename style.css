@@ -303,7 +303,7 @@ body.nav-open { overflow: hidden; }
    8. Hero
    ============================== */
 .hero {
-  min-height: 80vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -314,7 +314,10 @@ body.nav-open { overflow: hidden; }
 }
 
 @media (max-width: 1024px) {
-  .hero { background-attachment: scroll; }
+  .hero {
+    background-attachment: scroll;
+    min-height: 80vh;
+  }
 }
 
 @keyframes heroFadeUp {
