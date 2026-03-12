@@ -89,7 +89,7 @@
   /* ── Reveal animations ── */
   const revealObserver = new IntersectionObserver(
     entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')),
-    { threshold: 0.08, rootMargin: '0px 0px -55px 0px' }
+    { threshold: 0.05, rootMargin: '0px 0px 0px 0px' }
   );
   select('.reveal', true).forEach(el => revealObserver.observe(el));
 

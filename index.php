@@ -222,7 +222,7 @@
           <div class="col-md-4 reveal">
             <a href="fraud.html" class="project-card">
               <div class="project-img">
-                <img src="assets/img/freightin.png" alt="Freight in N">
+                <img src="assets/img/freightin.png" alt="Freight in">
                 <div class="project-overlay">
                   <i class="bi bi-arrow-up-right"></i>
                 </div>
