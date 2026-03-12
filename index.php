@@ -222,14 +222,14 @@
           <div class="col-md-4 reveal">
             <a href="fraud.html" class="project-card">
               <div class="project-img">
-                <img src="assets/img/freightin.png" alt="Fraud Bank Analysis">
+                <img src="assets/img/freightin.png" alt="Freight in N">
                 <div class="project-overlay">
                   <i class="bi bi-arrow-up-right"></i>
                 </div>
               </div>
               <div class="project-body">
                 <span class="project-tag">Data Analysis</span>
-                <h3 class="project-title">Fraud Bank Analysis</h3>
+                <h3 class="project-title">Freight in N</h3>
                 <span class="project-date">Dec 2022</span>
               </div>
             </a>
